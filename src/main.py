@@ -2,7 +2,7 @@ import sys, os, math, random, platform, subprocess, threading
 from unittest import ut
 import pathlib
 from backend.io.io import io, thread
-import java.nio.file.Path
+from backend.connection import wifi
 
 #path setup
 current_dir = pathlib.Path(__file__).parent.resolve()
@@ -25,4 +25,6 @@ class thread:
     def join(thread):
         thread.join()
 
-Wifi.send()
+
+def send_wifi_file(ip, file_path):
+    wifi.send(ip, file_path)

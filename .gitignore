@@ -1,0 +1,8 @@
+.gitignore
+/backend/connection/wifi/README.md
+.vscode
+/backend/connnection/wifi/.vscode
+/backend/connnection/wifi/build.ps1
+/backend/connnection/wifi/build.gradle
+tests/
+.gitignore
