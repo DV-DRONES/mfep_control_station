@@ -7,12 +7,12 @@ import (
 	"net"
 	"net/http"
 
-	"mfep_control_station/backend/connection/cache"
+	"mfep_control_station/backend/connection/wifi/cache"
 )
 
 func main() {
-	root := flag.String("dir", "", "dfiles")
-	address := flag.String("listen", "127.0.0.1:8765", "command")
+	root := flag.String("dir", "", "directory to scan for garbage-marked files")
+	address := flag.String("listen", "127.0.0.1:8765", "loopback address for the HTTP server")
 	flag.Parse()
 
 	if *root == "" {

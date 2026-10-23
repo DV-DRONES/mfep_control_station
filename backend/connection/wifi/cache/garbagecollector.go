@@ -28,7 +28,7 @@ func CollectGarbage(root string) ([]string, error) {
 		}
 
 		extension := strings.ToLower(filepath.Ext(entry.Name()))
-		if extension != ".json" && extension != ".yaml" {
+		if extension != ".json" && extension != ".yaml" && extension != ".yml" {
 			return nil
 		}
 
