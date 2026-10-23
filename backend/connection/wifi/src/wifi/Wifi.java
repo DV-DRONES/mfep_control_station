@@ -172,12 +172,12 @@ public final class Wifi {
         }
     }
 
-    /** Compatibility spelling; prefer {@link #receive()} or {@link #receive(int, Path)}. */
+    
     public static Path recive() throws IOException {
         return receive();
     }
 
-    /** Compatibility spelling; prefer {@link #receive(int, Path)}. */
+    
     public static Path recive(int port, Path saveDirectory) throws IOException {
         return receive(port, saveDirectory);
     }
