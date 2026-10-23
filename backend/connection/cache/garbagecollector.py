@@ -1,4 +1,4 @@
-"""Client for triggering the Go garbage collector over localhost HTTP."""
+
 
 from __future__ import annotations
 

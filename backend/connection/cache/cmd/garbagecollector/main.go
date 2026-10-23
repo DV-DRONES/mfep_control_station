@@ -11,8 +11,8 @@ import (
 )
 
 func main() {
-	root := flag.String("dir", "", "directory to scan for garbage-marked JSON and YAML files")
-	address := flag.String("listen", "127.0.0.1:8765", "loopback address and port for command requests")
+	root := flag.String("dir", "", "dfiles")
+	address := flag.String("listen", "127.0.0.1:8765", "command")
 	flag.Parse()
 
 	if *root == "" {

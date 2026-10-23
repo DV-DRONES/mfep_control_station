@@ -13,8 +13,6 @@ type collectResponse struct {
 	Error   string   `json:"error,omitempty"`
 }
 
-// NewCommandHandler creates a local command endpoint that runs the collector
-// only against root. Clients trigger a run with POST /collect and an empty body.
 func NewCommandHandler(root string) (http.Handler, error) {
 	absoluteRoot, err := filepath.Abs(root)
 	if err != nil {
